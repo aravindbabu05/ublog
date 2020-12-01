@@ -6,7 +6,10 @@ package com.upgrad.ublog.exceptions;
  *  parameter and passes it to its base class.
  */
 
-public class UserAlreadyRegisteredException {
+public class UserAlreadyRegisteredException extends Exception {
+   public UserAlreadyRegisteredException(String s){
+        super(s);
+    }
 
 //    public static void main(String[] args) {
 //        try {

@@ -6,7 +6,11 @@ package com.upgrad.ublog.exceptions;
  *  parameter and passes it to its base class.
  */
 
-public class PostNotFoundException {
+public class PostNotFoundException extends Exception{
+    public PostNotFoundException(String msg) {
+
+        super(msg);
+    }
 
 //    public static void main(String[] args) {
 //        try {

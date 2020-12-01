@@ -6,7 +6,10 @@ package com.upgrad.ublog.exceptions;
  *  parameter and passes it to its base class.
  */
 
-public class UserNotFoundException {
+public class UserNotFoundException extends Exception{
+    public UserNotFoundException(String msg){
+        super(msg);
+    }
 
 //    public static void main(String[] args) {
 //        try {

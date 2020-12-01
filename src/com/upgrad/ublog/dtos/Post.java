@@ -77,17 +77,26 @@ public class Post {
     public Post() {
     }
 
-    //    @Override
-//    public String toString() {
-//        return "Post{" +
-//                "postId=" + postId +
-//                ", emailId='" + emailId + '\'' +
-//                ", tag='" + tag + '\'' +
-//                ", title='" + title + '\'' +
-//                ", description='" + description + '\'' +
-//                ", timestamp=" + timestamp +
-//                '}';
-//    }
+    public Post(int postId, String emailId, String tag, String title, String description, LocalDateTime timestamp) {
+        this.postId = postId;
+        this.emailId = emailId;
+        this.tag = tag;
+        this.title = title;
+        this.description = description;
+        this.timestamp = timestamp;
+    }
+
+
+    public String toString() {
+        return "Post{" +
+                "postId=" + postId +
+                ", emailId='" + emailId + '\'' +
+                ", tag='" + tag + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", timestamp=" + timestamp +
+                '}';
+    }
 
 
     public static void main(String[] args) {

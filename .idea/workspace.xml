@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d37b12ba-2364-4366-9389-a1f94623c5d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/dtos/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/dtos/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/dtos/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/dtos/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/dtos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/dtos/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/exceptions/IncorrectPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/exceptions/IncorrectPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fsd-java-ublog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fsd-java-ublog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/db/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/db/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/exceptions/IncorrectPasswordException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/exceptions/IncorrectPasswordException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/dao/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/db/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +51,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fsd-java-ublog - sol" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.IncorrectPasswordException">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.ublog.Application" />
+  <component name="RunManager" selected="Application.Database (1)">
+    <configuration name="Database (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.ublog.db.Database" />
+      <module name="fsd-java-ublog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upgrad.ublog.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Database" />
       <module name="fsd-java-ublog" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,13 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.ublog.utils.Solution" />
-      <module name="fsd-java-ublog" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upgrad.ublog.dtos.User" />
       <module name="fsd-java-ublog" />
@@ -111,19 +117,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.Application" />
       <item itemvalue="Application.Post" />
       <item itemvalue="Application.User" />
       <item itemvalue="Application.IncorrectPasswordException" />
+      <item itemvalue="Application.Database" />
+      <item itemvalue="Application.Database (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Database (1)" />
+        <item itemvalue="Application.Database" />
         <item itemvalue="Application.IncorrectPasswordException" />
         <item itemvalue="Application.Post" />
         <item itemvalue="Application.User" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +154,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="757" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1606816198104">
@@ -155,29 +162,34 @@
     </state>
     <state x="757" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1606816198104" />
     <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1605869910427" />
-    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1606122315288">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="503" y="51" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1606875712966">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="503" y="51" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1280.680@0.0.1280.680" timestamp="1606875712966" />
+    <state x="365" y="98" key="FileChooserDialogImpl" timestamp="1606875682575">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="365" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606875682575" />
     <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606122315288" />
-    <state width="1237" height="91" key="GridCell.Tab.0.bottom" timestamp="1606815965389">
+    <state width="1237" height="104" key="GridCell.Tab.0.bottom" timestamp="1606979842521">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="91" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606815965389" />
+    <state width="1237" height="104" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606979842521" />
     <state width="1345" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606123172231" />
-    <state width="1237" height="91" key="GridCell.Tab.0.center" timestamp="1606815965389">
+    <state width="1237" height="104" key="GridCell.Tab.0.center" timestamp="1606979842521">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="91" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606815965389" />
+    <state width="1237" height="104" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606979842521" />
     <state width="1345" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606123172231" />
-    <state width="1237" height="91" key="GridCell.Tab.0.left" timestamp="1606815965389">
+    <state width="1237" height="104" key="GridCell.Tab.0.left" timestamp="1606979842521">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="91" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606815965389" />
+    <state width="1237" height="104" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606979842521" />
     <state width="1345" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606123172231" />
-    <state width="1237" height="91" key="GridCell.Tab.0.right" timestamp="1606815965389">
+    <state width="1237" height="104" key="GridCell.Tab.0.right" timestamp="1606979842521">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="91" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606815965389" />
+    <state width="1237" height="104" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606979842521" />
     <state width="1345" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606123172231" />
     <state width="1345" height="278" key="GridCell.Tab.1.bottom" timestamp="1606057058808">
       <screen x="0" y="0" width="1366" height="728" />
@@ -195,13 +207,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="278" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1606057058808" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1605868062952">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="153" y="0" key="SettingsEditor" timestamp="1606917099391">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606917099391" />
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605868062952" />
-    <state x="303" y="24" key="new project wizard" timestamp="1605883116114">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="284" y="0" key="new project wizard" timestamp="1606877822746">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="284" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1606877822746" />
     <state x="303" y="24" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1605883116114" />
   </component>
 </project>

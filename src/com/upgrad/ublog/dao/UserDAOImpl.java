@@ -1,5 +1,9 @@
 package com.upgrad.ublog.dao;
 
+import com.upgrad.ublog.dtos.User;
+
+import java.sql.SQLException;
+
 /**
  * TODO: 3.5. Implement the UserDAO interface and implement this class using the Singleton pattern.
  *  (Hint: Should have a private no-arg Constructor, a private static instance attribute of type
@@ -12,8 +16,18 @@ package com.upgrad.ublog.dao;
  *  argument. (Hint: You should get the connection using the Database class)
  */
 
-public class UserDAOImpl {
+public class UserDAOImpl implements UserDAO {
+    public User create(User user) throws SQLException
+    {
+        private static UserDAOImpl user;
+       return null;
 
+    }
+
+    public User findByEmailId(String emailId) throws SQLException{
+        return null;
+
+    }
 
 
 //    public static void main(String[] args) {

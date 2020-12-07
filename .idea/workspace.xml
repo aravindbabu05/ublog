@@ -21,13 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d37b12ba-2364-4366-9389-a1f94623c5d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/dao/UserDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fsd-java-ublog/com/upgrad/ublog/services/UserServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/dao/UserDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/services/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/services/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/services/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/services/ServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/upgrad/ublog/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upgrad/ublog/services/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,6 +210,10 @@
     </state>
     <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606917099391" />
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605868062952" />
+    <state x="180" y="0" width="959" height="667" key="dock-window-1" timestamp="1607379998588">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="180" y="0" width="959" height="667" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1607379998588" />
     <state x="284" y="0" key="new project wizard" timestamp="1606877822746">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

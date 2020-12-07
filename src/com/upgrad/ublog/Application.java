@@ -158,6 +158,16 @@ public class Application {
         System.out.println("*********************");
         System.out.println("*****Create Post*****");
         System.out.println("*********************");
+        int postId;
+        String emailId=loggedInEmailId;
+        LocalDateTime timestamp=LocalDateTime.now();
+        System.out.println("****tag*****");
+        String tag=scanner.nextLine();
+        System.out.println("*****title*****");
+        String title=scanner.nextLine();
+        System.out.println("*****description*****");
+        String description=scanner.nextLine();
+        System.out.println(timestamp);
 
 
     }

@@ -52,8 +52,11 @@ package com.upgrad.ublog.services;
  */
 
 import com.upgrad.ublog.dao.UserDAOImpl;
+import com.upgrad.ublog.db.Database;
 import com.upgrad.ublog.dtos.Post;
 
+import java.sql.Connection;
+import java.sql.Statement;
 import java.util.List;
 import java.util.Set;
 
@@ -79,6 +82,9 @@ public class PostServiceImpl  implements PostService{
     }
 
     public Post create(Post post) throws Exception{
+        Connection connection = Database.getConnection();
+        Statement statement = connection.createStatement();
+        String x=
         return post;
     }
     public List<Post> getPostsByEmailId(String emailId) throws Exception;

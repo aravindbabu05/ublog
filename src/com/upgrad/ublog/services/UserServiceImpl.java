@@ -1,5 +1,7 @@
 package com.upgrad.ublog.services;
 
+import com.upgrad.ublog.dao.DAOFactory;
+import com.upgrad.ublog.dao.UserDAO;
 import com.upgrad.ublog.db.Database;
 import com.upgrad.ublog.dtos.User;
 
@@ -66,5 +68,7 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    private DAOFactory daoFactory=new DAOFactory();
 
+    private UserDAO userDAO= daoFactory.getUserDAO();
 }

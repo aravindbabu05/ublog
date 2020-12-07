@@ -1,8 +1,11 @@
 package com.upgrad.ublog.dao;
 
+import com.upgrad.ublog.db.Database;
 import com.upgrad.ublog.dtos.User;
 
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * TODO: 3.5. Implement the UserDAO interface and implement this class using the Singleton pattern.
@@ -17,35 +20,56 @@ import java.sql.SQLException;
  */
 
 public class UserDAOImpl implements UserDAO {
-    public User create(User user) throws SQLException
-    {
-        private static UserDAOImpl user;
-       return null;
+    private static UserDAOImpl instance = new UserDAOImpl();
 
+    private UserDAOImpl() {
     }
 
-    public User findByEmailId(String emailId) throws SQLException{
+    public User create(User user) throws SQLException {
+        Connection connection = Database.getConnection();
+        Statement statement = connection.createStatement();
+        String userName= user.getEmailId();
+        String userPassword=user.getPassword();
+        String insertQuery="insert into user( emailId,password) values ("+userName+","+ userPassword+")";
+                statement.executeUpdate(insertQuery);
+return user ;
+    }
+
+    public static UserDAOImpl getInstance() {
+        if (instance == null) {
+            instance = new UserDAOImpl();
+        }
+        return instance;
+    }
+
+    public User findByEmailId(String emailId) throws SQLException {
+        Connection connection = Database.getConnection();
+        Statement statement = connection.createStatement();
+        String selectQuery="select emailId from user where emailId ="+emailId;
+        statement.executeQuery(selectQuery);
         return null;
-
     }
 
 
-//    public static void main(String[] args) {
-//        try {
-//            UserDAO userDAO = new UserDAOImpl();
-//            User temp = new User();
-//            temp.setUserId(1);
-//            temp.setEmailId("temp@temp.temp");
-//            temp.setPassword("temp");
-//            userDAO.create(temp);
-//            System.out.println(userDAO.findByEmailId("temp@temp.temp"));
-//        } catch (Exception e) {
-//            System.out.println("FAILED");
-//        }
-//
+
+
+    public static void main(String[] args) {
+        try {
+            UserDAO userDAO = new UserDAOImpl();
+            User temp = new User();
+            temp.setUserId(1);
+            temp.setEmailId("temp@temp.temp");
+            temp.setPassword("temp");
+            userDAO.create(temp);
+            System.out.println(userDAO.findByEmailId("temp@temp.temp"));
+        } catch (Exception e) {
+            System.out.println("FAILED");
+        }
+
 //        /**
 //         * Following should be the desired output of the main method.
 //         * User{userId=11, emailId='temp@temp.temp', password='temp'}
 //         */
 //    }
+    }
 }

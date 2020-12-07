@@ -1,5 +1,12 @@
 package com.upgrad.ublog.services;
 
+import com.upgrad.ublog.db.Database;
+import com.upgrad.ublog.dtos.User;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 /**
  * TODO: 3.10. Implement the UserService interface and implement this class using the Singleton pattern.
  *  (Hint: Should have a private no-arg Constructor, a private static instance attribute of type
@@ -27,6 +34,37 @@ package com.upgrad.ublog.services;
  *  with a message "Some unexpected error occurred!"
  */
 
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
+    private static UserService instance = new UserServiceImpl();
+
+    private UserServiceImpl() {
+    }
+    public static UserService getInstance() {
+        if (instance == null) {
+            instance = new UserServiceImpl();
+        }
+        return instance;
+    }
+    public boolean login(User user) throws Exception{
+        Connection connection = Database.getConnection();
+        Statement statement = connection.createStatement();
+        String selectQuery ="select emailId from user where emailId=email ";
+
+        return true;
+    }
+    public boolean register(User user) throws Exception{
+        Connection connection = Database.getConnection();
+        Statement statement = connection.createStatement();
+        String userEmail= user.getEmailId();
+        String selectQuery="select emailId from user where emailId="+userEmail;
+        ResultSet checkEmailId=statement.executeQuery(selectQuery);
+        if (ResultSet == userEmail) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
 
 }

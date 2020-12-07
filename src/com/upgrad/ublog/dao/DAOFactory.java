@@ -9,4 +9,5 @@ package com.upgrad.ublog.dao;
 
 public class DAOFactory {
 
+
 }

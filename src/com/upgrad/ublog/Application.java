@@ -10,6 +10,7 @@ import com.upgrad.ublog.utils.DateTimeFormatter;
 import com.upgrad.ublog.utils.LogWriter;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Scanner;
@@ -80,12 +81,18 @@ public class Application {
             System.out.println("You are already logged in.");
             return;
         }
+        else {
 
-        System.out.println("*********************");
-        System.out.println("********Login********");
-        System.out.println("*********************");
+            System.out.println("*********************");
+            System.out.println("********Login********");
+            System.out.println("*********************");
+            System.out.println("Enter the Email : ");
+            String emailId=scanner.next();
+            System.out.println("Enter the Password :");
+            String passWord=scanner.next();
 
 
+        }
     }
 
     /**
